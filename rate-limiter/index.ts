@@ -3,12 +3,14 @@ import tokenRouter from './module/token-bucket/index.ts';
 import FixedWindowRouter from './module/FixedWindowCounter/index.ts';
 import SlidingWinRouter from './module/SlidingWindowLog/index.ts';
 import SlidingWindowRouter from './module/SlidingWindowCounter/index.ts';
+import LeakyBucketRouter from './module/LeakyBucket/index.ts';
 const app=express();
 
 app.use('/tokenBucket', tokenRouter);
 app.use('/fwc', FixedWindowRouter);
 app.use('/swl', SlidingWinRouter);
 app.use('/swc', SlidingWindowRouter);
+app.use('/lb', LeakyBucketRouter);
 app.get('/',(req,res)=>{
     res.send("Welcome to the Rate Limiter Project");
 })
