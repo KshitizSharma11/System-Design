@@ -5,3 +5,5 @@
 3. sample route to test sliding window log - GET : /swl/hit
 
 4. sample route to test sliding window counter - GET : /swc/hit
+
+5. sample route to test leaky bucket - GET : /lb/hit
