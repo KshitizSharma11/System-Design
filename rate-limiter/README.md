@@ -3,3 +3,5 @@
 2. sample route to test fixed window counter- GET : /fwc/hit
 
 3. sample route to test sliding window log - GET : /swl/hit
+
+4. sample route to test sliding window counter - GET : /swc/hit
