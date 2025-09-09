@@ -5,10 +5,10 @@ export default class Shortner{
     id!:number;
 
     @Column()
-    originalUrl!:string;
+    originalUrl?:string;
 
     @Column()
-    shortCode!:string;
+    shortCode?:string;
 
     @Column({type:"timestamp", default: () => "CURRENT_TIMESTAMP"})
     createdAt!:Date;

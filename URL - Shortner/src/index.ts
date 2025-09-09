@@ -4,6 +4,8 @@ import { Db } from './Db/Db.js';
 
 
 const app = express();
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 app.use('/', ShortnerRouter);
 async function startServer() {
     try{
